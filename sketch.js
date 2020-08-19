@@ -95,7 +95,7 @@ function draw() {
 
     if (touches<0||keyDown("space") && trex.y >= 159) {
       trex.velocityY = -12;
-      touches[];
+      touches = [];
       if (jump.isPlaying()) {
         jump.stop();
       } else {
