@@ -93,7 +93,7 @@ function draw() {
       checkpoint.play();
     }
 
-    if (touches<0||keyDown("space") && trex.y >= 159) {
+    if ((touches.length > 0||keyDown("space")) && trex.y >= 159) {
       trex.velocityY = -12;
       touches = [];
       if (jump.isPlaying()) {
